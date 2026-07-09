@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="DecodeLabs Project 1: Responsive Layout Architecture">
+  <meta
+    http-equiv="Content-Security-Policy"
+    content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self'; object-src 'none'; base-uri 'self'; frame-ancestors 'none';"
+  >
+  <title>DecodeLabs Project 1</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <div class="app">
+    <header>
+      <nav aria-label="Primary Navigation">
+        <div class="nav-inner">
+          <a href="/" aria-label="Nova EV Home"><strong>Nova EV</strong></a>
+          <div class="nav-actions">
+            <ul class="nav-links">
+              <li><a href="#models">Models</a></li>
+              <li><a href="#technology">Technology</a></li>
+              <li><a href="#sustainability">Sustainability</a></li>
+            </ul>
+            <button type="button">Pre-Order Now</button>
+          </div>
+        </div>
+      </nav>
+      <div class="hero">
+        <div class="hero-inner">
+          <h1>Electric Performance, Redefined.</h1>
+          <p>Experience the seamless integration of aerodynamic design and next-generation battery architecture.</p>
+          <button type="button">Explore the Nova</button>
+        </div>
+      </div>
+    </header>
+    <main id="main-content">
+      <aside class="sidebar" aria-label="Secondary Information">
+        <section>
+          <h2>Core Specifications</h2>
+          <ul>
+            <li>0-60 mph in 2.9s</li>
+            <li>450-mile estimated range</li>
+            <li>800V fast-charging architecture</li>
+          </ul>
+        </section>
+      </aside>
+      <article aria-label="Main Content">
+        <header>
+          <h1>Designed for the Electric Era</h1>
+          <p>From propulsion systems to cabin intelligence, each element is tuned for performance, efficiency, and premium comfort.</p>
+        </header>
+
+        <section class="content-card" id="models" aria-label="Aerodynamic Chassis">
+          <h3>Aerodynamic Chassis</h3>
+          <p>Engineered to slice through the air with a drag coefficient of just 0.20.</p>
+          <a href="#">Learn More <span aria-hidden="true">&rarr;</span></a>
+        </section>
+
+        <section class="content-card" id="technology" aria-label="Solid-State Battery">
+          <h3>Solid-State Battery</h3>
+          <p>Lighter, safer, and infinitely more energy-dense than traditional lithium-ion.</p>
+          <a href="#">Learn More <span aria-hidden="true">&rarr;</span></a>
+        </section>
+
+        <section class="content-card" id="sustainability" aria-label="Autonomous Safety">
+          <h3>Autonomous Safety</h3>
+          <p>LiDAR-backed predictive safety systems that see the road before you do.</p>
+          <a href="#">Learn More <span aria-hidden="true">&rarr;</span></a>
+        </section>
+
+        <section class="content-card" aria-label="Sustainable Luxury">
+          <h3>Sustainable Luxury</h3>
+          <p>Interior materials crafted entirely from recycled ocean plastics and vegan leather.</p>
+          <a href="#">Learn More <span aria-hidden="true">&rarr;</span></a>
+        </section>
+      </article>
+    </main>
+    <footer>
+      <div class="footer-inner">
+        <div class="footer-metadata">
+          <p>&copy; <time datetime="2026">2026</time> DecodeLabs. All rights reserved.</p>
+        </div>
+        <nav aria-label="Footer Links">
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+  </div>
+  <script src="js/app.js"></script>
+</body>
+</html>
