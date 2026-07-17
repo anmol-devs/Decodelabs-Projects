@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-sans bg-slate-50 text-slate-900 transition-colors duration-200 antialiased overflow-x-hidden;
+  }
+  body.dark {
+    @apply bg-[#0b0f19] text-slate-100;
+  }
+}
+
+/* Glassmorphism Panels */
+.glass-panel {
+  @apply bg-white/75 backdrop-blur-lg border border-slate-200/50 shadow-glass-light;
+}
+
+.dark .glass-panel {
+  @apply bg-[#121826]/75 backdrop-blur-lg border border-slate-800/60 shadow-glass-dark;
+}
+
+/* Glass Cards */
+.glass-card {
+  @apply bg-white/60 backdrop-blur-md border border-slate-200/40 shadow-sm rounded-2xl hover:shadow-md transition-all duration-300;
+}
+
+.dark .glass-card {
+  @apply bg-[#151c2c]/60 backdrop-blur-md border border-slate-800/50 shadow-md rounded-2xl hover:shadow-lg transition-all duration-300;
+}
+
+/* Glowing buttons */
+.glow-indigo {
+  @apply shadow-[0_0_15px_rgba(99,102,241,0.2)] hover:shadow-[0_0_20px_rgba(99,102,241,0.4)] transition-all;
+}
+
+/* Custom Sleek Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-slate-300 dark:bg-slate-700/60 rounded-full transition-colors;
+}
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-slate-400 dark:bg-slate-600;
+}
+
+/* Loading Skeleton Shimmer Effect */
+.shimmer {
+  background: linear-gradient(
+    90deg,
+    rgba(241, 245, 249, 0.4) 25%,
+    rgba(226, 232, 240, 0.7) 37%,
+    rgba(241, 245, 249, 0.4) 63%
+  );
+  background-size: 400% 100%;
+  animation: skeleton-loading 1.4s ease infinite;
+}
+
+.dark .shimmer {
+  background: linear-gradient(
+    90deg,
+    rgba(30, 41, 59, 0.4) 25%,
+    rgba(51, 65, 85, 0.7) 37%,
+    rgba(30, 41, 59, 0.4) 63%
+  );
+  background-size: 400% 100%;
+  animation: skeleton-loading 1.4s ease infinite;
+}
+
+@keyframes skeleton-loading {
+  0% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
